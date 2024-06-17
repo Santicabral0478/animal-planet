@@ -9,11 +9,6 @@
   --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 }
 
-body {
-  background-color: #000;
-  color: #101010;
-}
-
 *,
 *::before,
 *::after {
@@ -92,7 +87,7 @@ html {
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: #060606;
   color: #ffffff;
   font-size: 1.5rem;
 }
@@ -171,7 +166,7 @@ body {
 
 .header{
   background: rgb(19,19,19);
-  background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(170,181,181,0) 100%); 
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(170,181,181,0) 100%); 
   height: 18rem;
   position: fixed;
   z-index: 99999;
@@ -323,45 +318,42 @@ body {
 .showsect .section-title { margin-block-end: 50px; }
 
 .showsect-card .card-banner {
-  border-radius: var(--radius-4);
   overflow: hidden;
-  margin-block-end: 25px;
+  position: relative;
 }
 
 .showsect-card {
-  padding: 30px;
   border: 1px solid var(--light-gray);
-  border-radius: var(--radius-4);
-  text-align: center;
   min-height: 100%;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  gap: 1.1rem;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.gradientimage{
+  width: 100%;
+  height: 9rem;
+  position: absolute;
+  background: rgb(237,237,237);
+  background: linear-gradient(180deg, rgba(237,237,237,0) 0%, rgba(27,27,27,1) 100%);
+  bottom: -1%;
 }
 
 .showsect-card .card-title {
-  font-size: var(--fs-4);
-  transition: var(--transition);
+  color: #f9f9f9;
+  font-size: 18px;
+  margin-left: 1rem;
 }
 
 .showsect-card:is(:hover, :focus-within) .card-title { color: #10540d; }
 
 .showsect-card .card-subtitle {
-  color: #10540d;
-  margin-block: 10px 15px;
-}
-
-.showsect-card .card-social-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.showsect-card .card-social-link {
-  background-color: #25272c;
-  color: #10540d;
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 50%;
-  transition: var(--transition);
+  margin-left: 1rem;
+  color: #c0c0c0;
 }
 
 .showsect-card .card-social-link:is(:hover, :focus) {
@@ -369,11 +361,17 @@ body {
   color: #1c1c1c;
 }
 
+.img-cover-card{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0px 0px;
+}
+
 .has-scrollbar {
   display: flex;
   gap: 30px;
   overflow-x: auto;
-  margin-inline: 15px;
   padding-block-end: 40px;
   margin-block-end: -20px;
   scroll-snap-type: inline mandatory;
@@ -748,7 +746,7 @@ body {
 
 @media (min-width: 1200px) {
 
-  .container { max-width: 1180px; }
+  .container { max-width: 1200px; }
 
   .contact-list { gap: 30px; }
 
