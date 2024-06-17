@@ -1,6 +1,7 @@
 "use client"
 import { useEffect } from 'react';
 import styles from "./Banner.module.css"
+import Link from 'next/link';
 
 const Banner = () => {
   // useEffect(() => {
@@ -19,22 +20,61 @@ const Banner = () => {
   return (
     <>
       <section className={styles.layers}>
+
+
+
+
+
         <div className={styles.layers__container}>
           <div className={`${styles.layers__item} ${styles.layer1}`} style={{ backgroundImage: 'url(/layer-1.jpg)' }}></div>
           <div className={`${styles.layers__item} ${styles.layer2}`} style={{ backgroundImage: 'url(/layer-2.png)' }}></div>
           <div className={`${styles.layers__item} ${styles.layer3}`}>
             <div className={styles.herocontent}>
-              <h1>Natural Forest <span>HTML / CSS</span></h1>
+              <h1>Animal Planet <br /> TV Web</h1>
               <div className={styles.herocontent__p}>Creating a beautiful 3D website with a ‘lens effect’</div>
-              <button className={styles.buttonStart}>Start Learning</button>
+              <Link href={"https://google.com"}>
+                <button className={styles.buttonStart}>Start Learning</button>
+              </Link>
             </div>
           </div>
           <div className={`${styles.layers__item} ${styles.layer4}`}></div>
           <div className={`${styles.layers__item} ${styles.layer5}`} style={{ backgroundImage: 'url(/layer-5.png)' }}></div>
           <div className={`${styles.layers__item} ${styles.layer6}`} style={{ backgroundImage: 'url(/layer-6.png)' }}></div>
+        <div className={styles.gradientbottombanner}></div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/*  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="container natureone">   
                 <ul className="natureone-list"> 
@@ -90,8 +130,6 @@ const Banner = () => {
                   
                   <li className="natureone-banner">
                     <figure>
-                      <img src="./assets/images/natureone-banner.png" width="409" height="467" loading="lazy"
-                        alt="natureone banner" className="w-100"/>
                     </figure>
                   </li> 
 
@@ -145,7 +183,7 @@ const Banner = () => {
                     </div>
                   </li> 
                 </ul>   
-              </div>
+        </div>
       </section>
     </>
   );

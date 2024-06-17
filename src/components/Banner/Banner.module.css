@@ -14,7 +14,8 @@
       overflow: hidden;
     }
     .layers__container {
-      height: 100vh;
+      position: relative;
+      height: 80vh;
       min-height: 500px;
       transform-style: preserve-3d;
       transform: rotateX(var(--move-y)) rotateY(var(--move-x));
@@ -57,7 +58,7 @@
       text-transform: uppercase;
       letter-spacing: calc(var(--index) * -.15);
       line-height: 1.35em;
-      margin-top: calc(var(--index) * 5.5);
+      margin-top: 20rem;
     }
     .herocontent span {
       display: block;
@@ -103,7 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 14rem;
+    padding: 10rem;
   }
   .layer1 {
     transform: translateZ(-55px) scale(1.06);
@@ -111,8 +112,8 @@
   .layer2 {
     right: 0%;
     transform: translateZ(80px) scale(.88);
-    height: 70%;
-    width: 90%;
+    width: 100rem;
+    height: 67rem;
   }
   .layer3 {
     transform: translateZ(180px) scale(.8);
@@ -165,3 +166,11 @@
     pointer-events: none;
   }
   
+  .gradientbottombanner{
+    position: absolute;
+    bottom: -85px;
+    height: 15rem;
+    width: 100%;
+    background: rgb(237, 237, 237);
+    background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, rgb(6 6 6) 100%);
+  }
