@@ -8,7 +8,6 @@ import { ShowSect } from "@/components/ShowSect";
 export default function Home() {
   return (
     <>
-    <Header/>
       <main>
         <Banner/>
         <ShowSect/>
