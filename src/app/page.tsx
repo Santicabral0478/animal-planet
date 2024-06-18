@@ -13,6 +13,7 @@ export default function Home() {
         <ShowSect/>
         <Blog/>
       </main>
+      <Footer/>
     </>
   );
 }
