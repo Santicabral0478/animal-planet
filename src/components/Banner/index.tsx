@@ -4,18 +4,18 @@ import styles from "./Banner.module.css"
 import Link from 'next/link';
 
 const Banner = () => {
-  // useEffect(() => {
-  //   const handleMouseMove = (e: MouseEvent) => {
-  //     document.documentElement.style.setProperty('--move-x', `${(e.clientX - window.innerWidth / 2) * -.005}deg`);
-  //     document.documentElement.style.setProperty('--move-y', `${(e.clientY - window.innerHeight / 2) * .01}deg`);
-  //   };
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      document.documentElement.style.setProperty('--move-x', `${(e.clientX - window.innerWidth / 2) * -.005}deg`);
+      document.documentElement.style.setProperty('--move-y', `${(e.clientY - window.innerHeight / 2) * .01}deg`);
+    };
 
-  //   document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mousemove', handleMouseMove);
 
-  //   return () => {
-  //     document.removeEventListener('mousemove', handleMouseMove);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
     <>
