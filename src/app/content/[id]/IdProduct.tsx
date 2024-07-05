@@ -102,7 +102,7 @@ export const IdProducts = ({ params }: { params : any}) => {
 
           <li>
             <a href="#" className="navbar-social-link">
-              {/* <ion-icon name="logo-instagram"></ion-icon> */}
+              {/* <ion-icon name="logo-instagram"></ionicon> */}
             </a>
           </li>
 
