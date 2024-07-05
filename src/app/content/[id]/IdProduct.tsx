@@ -108,7 +108,7 @@ export const IdProducts = ({ params }: { params : any}) => {
 
           <li>
             <a href="#" className="navbar-social-link">
-              {/* <ion-icon name="logo-youtube"></ion-icon> */}
+              {/* <ion-icon name="logo-youtube"></ionicon> */}
             </a>
           </li>
 
